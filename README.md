@@ -1,6 +1,6 @@
 # my-profile
 
-# 👋 Hey there, I'm Samira Ajudiya! 👩‍💻✨
+# 👋 Hey there, I'm Samir Ajudiya! 👩‍💻✨
 
 Welcome to my GitHub profile! I'm a passionate web developer 🌐, always eager to learn and collaborate. Let's make the web a better place together! 🚀
 
