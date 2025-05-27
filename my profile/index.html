@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - My Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .home {
+            background: linear-gradient(135deg, #000000 0%, #111111 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8rem 5% 2rem;
+        }
+        .hero {
+            background: #111111;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            border: 1px solid #222222;
+        }
+        .welcome-text {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #3b82f6, #60a5fa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .intro-text {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .cta-btn {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            font-size: 1.1rem;
+        }
+        .cta-btn:first-child {
+            background: linear-gradient(to right, #3b82f6, #60a5fa);
+            color: white;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+        }
+        .cta-btn.secondary {
+            background: transparent;
+            color: #3b82f6;
+            border: 2px solid #3b82f6;
+        }
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+        }
+        .skill-icons {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        .skill-icon {
+            font-size: 2.5rem;
+            color: #94a3b8;
+            transition: all 0.3s ease;
+        }
+        .skill-icon:hover {
+            color: #3b82f6;
+            transform: translateY(-5px);
+        }
+        footer {
+            background: #000000;
+            border-top: 1px solid #222222;
+        }
+        .social-links a {
+            color: #94a3b8;
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #3b82f6;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">My Profile</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main class="home">
+        <div class="hero">
+            <h1 class="welcome-text">Hi, I'm Samir Ajudiya</h1>
+            <p class="intro-text">A passionate Full Stack Developer specializing in creating modern and responsive web applications. I combine creativity with technical expertise to build engaging digital experiences.</p>
+            <div class="cta-buttons">
+                <a href="projects.html" class="cta-btn">View My Work</a>
+                <a href="contact.html" class="cta-btn secondary">Contact Me</a>
+            </div>
+            <div class="skill-icons">
+                <i class="fab fa-html5 skill-icon" title="HTML5"></i>
+                <i class="fab fa-css3-alt skill-icon" title="CSS3"></i>
+                <i class="fab fa-js skill-icon" title="JavaScript"></i>
+                <i class="fab fa-react skill-icon" title="React"></i>
+                <i class="fab fa-node-js skill-icon" title="Node.js"></i>
+                <i class="fab fa-php skill-icon" title="PHP"></i>
+                <i class="fas fa-database skill-icon" title="Databases"></i>
+                <i class="fab fa-git-alt skill-icon" title="Git"></i>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 My Profile. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 

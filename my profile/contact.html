@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - My Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .contact {
+            background: linear-gradient(135deg, #000000 0%, #111111 100%);
+            color: #e2e8f0;
+            min-height: 80vh;
+            padding: 4rem 2rem;
+        }
+        .contact-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #111111;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .info-box {
+            background: #1a1a1a;
+            border: 2px solid #222222;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .info-box:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
+        }
+        .info-box i {
+            font-size: 2rem;
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+        .info-box h3 {
+            color: #e2e8f0;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .info-box p, .info-box a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .info-box a:hover {
+            color: #3b82f6;
+        }
+        .map-box {
+            grid-column: 1 / -1;
+            background: #1a1a1a;
+            border: 2px solid #222222;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            margin-top: 1rem;
+        }
+        .map-box:hover {
+            border-color: #3b82f6;
+            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
+        }
+        .map-box i {
+            font-size: 2rem;
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+        .map-box h3 {
+            color: #e2e8f0;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .map-container {
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(85%);
+        }
+        .contact-form {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .form-group label {
+            color: #94a3b8;
+            font-size: 1.1rem;
+        }
+        .form-group input,
+        .form-group textarea {
+            padding: 0.8rem;
+            border-radius: 8px;
+            border: 2px solid #222222;
+            background: #1a1a1a;
+            color: #e2e8f0;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin: 0 auto;
+            min-width: 200px;
+        }
+        .submit-btn:hover {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+        .submit-btn i {
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+        .submit-btn:hover i {
+            transform: translateX(4px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">My Profile</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <main class="contact">
+        <div class="contact-content">
+            <h2 style="color: #3b82f6; font-size: 2.5rem; margin-bottom: 2rem; text-align: center;">Get in Touch</h2>
+            
+            <div class="contact-info">
+                <div class="info-box">
+                    <i class="fas fa-user"></i>
+                    <h3>Name</h3>
+                    <p>Samir Ajudiya</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <p><a href="tel:+919409474382">+91 9409474382</a></p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>Rajkot, Gujarat<br>PIN: 360005</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p><a href="mailto:samirajudiya929@gmail.com">samirajudiya929@gmail.com</a></p>
+                </div>
+               
+                <div class="map-box">
+                    <i class="fas fa-map"></i>
+                    <h3>Find Me in Rajkot</h3>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118147.68041541082!2d70.71790414160557!3d22.303891136856267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959c98ac71cdf0f%3A0x76dd15cfbe93ad3b!2sRajkot%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1709755169079!5m2!1sen!2sin"
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="info-box" style="grid-column: 1 / -1; margin-top: 1rem;">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Subject</h3>
+                    <p style="line-height: 1.8; font-size: 1.1rem;">
+                        Full Stack Web Developer | MERN Stack Specialist<br>
+                        • Frontend: React.js, HTML5, CSS3, JavaScript<br>
+                        • Backend: Node.js, Express.js, PHP<br>
+                        • Database: MySQL, MongoDB<br>
+                        Looking for Full Stack Developer Position & Project Collaborations
+                    </p>
+                </div>
+                <div class="info-box" style="grid-column: 1 / -1; margin-top: 1rem;">
+                    <i class="fas fa-envelope-open-text"></i>
+                    <h3>Message</h3>
+                    <div style="text-align: left; padding: 1rem; background: #222222; border-radius: 8px; margin-top: 1rem;">
+                        <p style="line-height: 1.8; font-size: 1.1rem; margin-bottom: 1rem;">
+                            I am a passionate Full Stack Developer with expertise in building modern web applications. My key strengths include:
+                        </p>
+                        <ul style="list-style: none; padding-left: 1rem; margin-bottom: 1rem;">
+                            <li style="margin-bottom: 0.5rem;">✓ Frontend Development: Creating responsive UI with React.js</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Backend Development: Building robust APIs with Node.js</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Database Management: Proficient in MySQL and MongoDB</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Problem Solving: Strong analytical and debugging skills</li>
+                        </ul>
+                        <p style="line-height: 1.8; font-size: 1.1rem;">
+                            I am eager to contribute my skills to innovative projects and collaborate with forward-thinking teams. Let's discuss how I can add value to your organization.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    Send Message
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 My Profile. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
